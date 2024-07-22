@@ -15,8 +15,8 @@ const but = document.querySelector('button').addEventListener('click',(e) =>{
 async function search(){
 
     
-let vale = document.querySelector('input').value
-const call = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${vale}&limit=5&appid=${key}`)
+let value = document.querySelector('input').value
+const call = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=5&appid=${key}`)
     const req = call.json().then(res=>{
         console.log(res);
         const loop = res.length
